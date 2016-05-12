@@ -17,7 +17,10 @@
 		C26255101CE37D5300829F3F /* WLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C26255091CE37D5300829F3F /* WLViewController.m */; };
 		C26255131CE381E600829F3F /* UITableView+WLEmptyPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = C26255121CE381E600829F3F /* UITableView+WLEmptyPlaceHolder.m */; };
 		C26255161CE3820C00829F3F /* UICollectionView+WLEmptyPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = C26255151CE3820C00829F3F /* UICollectionView+WLEmptyPlaceHolder.m */; };
-		C26255181CE384D300829F3F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C26255171CE384D300829F3F /* Info.plist */; };
+		C262551C1CE3854700829F3F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C262551B1CE3854700829F3F /* Default-568h@2x.png */; };
+		C262551E1CE385A200829F3F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C262551D1CE385A200829F3F /* Info.plist */; };
+		C26255221CE387D100829F3F /* WLWechatNetworkIndicatorStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C26255211CE387D100829F3F /* WLWechatNetworkIndicatorStyleView.m */; };
+		C26255251CE387F600829F3F /* WLNetworkReloaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C26255241CE387F600829F3F /* WLNetworkReloaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +62,12 @@
 		C26255121CE381E600829F3F /* UITableView+WLEmptyPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+WLEmptyPlaceHolder.m"; sourceTree = "<group>"; };
 		C26255141CE3820C00829F3F /* UICollectionView+WLEmptyPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+WLEmptyPlaceHolder.h"; sourceTree = "<group>"; };
 		C26255151CE3820C00829F3F /* UICollectionView+WLEmptyPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+WLEmptyPlaceHolder.m"; sourceTree = "<group>"; };
-		C26255171CE384D300829F3F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C262551B1CE3854700829F3F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		C262551D1CE385A200829F3F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C26255201CE387D100829F3F /* WLWechatNetworkIndicatorStyleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWechatNetworkIndicatorStyleView.h; sourceTree = "<group>"; };
+		C26255211CE387D100829F3F /* WLWechatNetworkIndicatorStyleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWechatNetworkIndicatorStyleView.m; sourceTree = "<group>"; };
+		C26255231CE387F600829F3F /* WLNetworkReloaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLNetworkReloaderView.h; sourceTree = "<group>"; };
+		C26255241CE387F600829F3F /* WLNetworkReloaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLNetworkReloaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,17 +167,30 @@
 		C26254FE1CE37D5300829F3F /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				C262551F1CE3879700829F3F /* TestView */,
 				C26254FF1CE37D5300829F3F /* AppDelegate.h */,
 				C26255001CE37D5300829F3F /* AppDelegate.m */,
 				C26255011CE37D5300829F3F /* Assets.xcassets */,
 				C26255021CE37D5300829F3F /* LaunchScreen.storyboard */,
 				C26255071CE37D5300829F3F /* main.m */,
-				C26255171CE384D300829F3F /* Info.plist */,
 				C26255081CE37D5300829F3F /* WLViewController.h */,
 				C26255091CE37D5300829F3F /* WLViewController.m */,
+				C262551B1CE3854700829F3F /* Default-568h@2x.png */,
+				C262551D1CE385A200829F3F /* Info.plist */,
 				C26254CA1CE37B1600829F3F /* Supporting Files */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		C262551F1CE3879700829F3F /* TestView */ = {
+			isa = PBXGroup;
+			children = (
+				C26255201CE387D100829F3F /* WLWechatNetworkIndicatorStyleView.h */,
+				C26255211CE387D100829F3F /* WLWechatNetworkIndicatorStyleView.m */,
+				C26255231CE387F600829F3F /* WLNetworkReloaderView.h */,
+				C26255241CE387F600829F3F /* WLNetworkReloaderView.m */,
+			);
+			name = TestView;
 			sourceTree = "<group>";
 		};
 		F4E862E6EA690A02BBA36A4B /* Pods */ = {
@@ -287,9 +308,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C262551E1CE385A200829F3F /* Info.plist in Resources */,
 				C262550B1CE37D5300829F3F /* Assets.xcassets in Resources */,
+				C262551C1CE3854700829F3F /* Default-568h@2x.png in Resources */,
 				C262550C1CE37D5300829F3F /* LaunchScreen.storyboard in Resources */,
-				C26255181CE384D300829F3F /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,11 +384,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26255251CE387F600829F3F /* WLNetworkReloaderView.m in Sources */,
 				C26255131CE381E600829F3F /* UITableView+WLEmptyPlaceHolder.m in Sources */,
 				C26255101CE37D5300829F3F /* WLViewController.m in Sources */,
 				C262550F1CE37D5300829F3F /* main.m in Sources */,
 				C262550A1CE37D5300829F3F /* AppDelegate.m in Sources */,
 				C26255161CE3820C00829F3F /* UICollectionView+WLEmptyPlaceHolder.m in Sources */,
+				C26255221CE387D100829F3F /* WLWechatNetworkIndicatorStyleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,7 +524,7 @@
 			baseConfigurationReference = 61A9C602EDE0C5C13A404361 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WLPlaceHolder/Info.plist;
+				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ptj.WLPlaceHolder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,7 +536,7 @@
 			baseConfigurationReference = 9FD1F51A0385C51F0B4E5991 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WLPlaceHolder/Info.plist;
+				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ptj.WLPlaceHolder;
 				PRODUCT_NAME = "$(TARGET_NAME)";

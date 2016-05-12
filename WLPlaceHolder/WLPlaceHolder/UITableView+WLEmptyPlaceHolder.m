@@ -14,11 +14,18 @@
 {
     if (rowCount == 0) {
         self.backgroundView = displayView;
+        self.scrollEnabled = NO;
         self.separatorStyle = UITableViewCellSeparatorStyleNone;
     } else {
         self.backgroundView = nil;
         self.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     }
+}
+
+
+- (void) tableViewWillDisplayNeccessaryView:(UIView *) view
+{
+    
 }
 
 @end

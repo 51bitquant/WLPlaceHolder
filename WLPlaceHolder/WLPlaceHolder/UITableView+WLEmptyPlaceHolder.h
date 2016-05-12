@@ -13,4 +13,9 @@
 //添加一个方法
 - (void) tableViewDisplayView:(UIView *) displayView ifNecessaryForRowCount:(NSUInteger) rowCount;
 
+- (void) tableViewWillDisplayNeccessaryView:(UIView *) view;
+
+//添加一个方法
+//- (void) tableViewDisplayViewAboveTableView:(UIView *) displayView ifNecessaryForRowCount:(NSUInteger) rowCount;
+
 @end
