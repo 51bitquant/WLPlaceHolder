@@ -1,47 +1,34 @@
 //
-//  ViewController.m
+//  WLNextDemoViewController.m
 //  WLPlaceHolder
 //
-//  Created by 王林 on 16/5/11.
+//  Created by 王林 on 16/5/12.
 //  Copyright © 2016年 com.ptj. All rights reserved.
 //
 
-#import "WLViewController.h"
 #import "WLNextDemoViewController.h"
 #import "MJRefresh.h"
-#import "WLNetworkReloaderView.h"
+#import "WLWechatNetworkIndicatorStyleView.h"
 #import "UITableView+WLEmptyPlaceHolder.h"
 
-
-@interface WLViewController ()
-
+@interface WLNextDemoViewController ()
 @property (nonatomic,strong) NSArray * dataSource;
 /**
  *  标记数据源是否有数据。
  */
 @property (nonatomic,assign) BOOL dataFlag;
 
-@property (nonatomic,strong)  WLNetworkReloaderView *networkIndicatorView;
+@property (nonatomic,strong)  WLWechatNetworkIndicatorStyleView *networkIndicatorView;
 
 @end
 
-@implementation WLViewController
-
+@implementation WLNextDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.backgroundColor = [UIColor whiteColor];
-    
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"案例" style:UIBarButtonItemStylePlain target:self action:@selector(nextDemo)];
-    
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRefreshing)];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CellID"];
-}
-
-- (void) nextDemo
-{
-    WLNextDemoViewController * nextDemoVC = [[WLNextDemoViewController alloc] init];
-    [self.navigationController pushViewController:nextDemoVC animated:YES];
 }
 
 - (void) headerRefreshing
@@ -90,10 +77,10 @@
 }
 
 
-- (WLNetworkReloaderView *) networkIndicatorView
+- (WLWechatNetworkIndicatorStyleView *) networkIndicatorView
 {
     if(_networkIndicatorView == nil) {
-        _networkIndicatorView = [[WLNetworkReloaderView alloc] initWithFrame:self.tableView.bounds];
+        _networkIndicatorView = [[WLWechatNetworkIndicatorStyleView alloc] initWithFrame:self.tableView.bounds];
     }
     return _networkIndicatorView;
 }

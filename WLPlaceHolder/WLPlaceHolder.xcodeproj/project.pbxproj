@@ -21,6 +21,7 @@
 		C262551E1CE385A200829F3F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C262551D1CE385A200829F3F /* Info.plist */; };
 		C26255221CE387D100829F3F /* WLWechatNetworkIndicatorStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C26255211CE387D100829F3F /* WLWechatNetworkIndicatorStyleView.m */; };
 		C26255251CE387F600829F3F /* WLNetworkReloaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C26255241CE387F600829F3F /* WLNetworkReloaderView.m */; };
+		C2F80D351CE411A800FFCF7C /* WLNextDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F80D341CE411A800FFCF7C /* WLNextDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		C26255211CE387D100829F3F /* WLWechatNetworkIndicatorStyleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWechatNetworkIndicatorStyleView.m; sourceTree = "<group>"; };
 		C26255231CE387F600829F3F /* WLNetworkReloaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLNetworkReloaderView.h; sourceTree = "<group>"; };
 		C26255241CE387F600829F3F /* WLNetworkReloaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLNetworkReloaderView.m; sourceTree = "<group>"; };
+		C2F80D331CE411A800FFCF7C /* WLNextDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLNextDemoViewController.h; sourceTree = "<group>"; };
+		C2F80D341CE411A800FFCF7C /* WLNextDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLNextDemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 				C26255071CE37D5300829F3F /* main.m */,
 				C26255081CE37D5300829F3F /* WLViewController.h */,
 				C26255091CE37D5300829F3F /* WLViewController.m */,
+				C2F80D331CE411A800FFCF7C /* WLNextDemoViewController.h */,
+				C2F80D341CE411A800FFCF7C /* WLNextDemoViewController.m */,
 				C262551B1CE3854700829F3F /* Default-568h@2x.png */,
 				C262551D1CE385A200829F3F /* Info.plist */,
 				C26254CA1CE37B1600829F3F /* Supporting Files */,
@@ -387,6 +392,7 @@
 				C26255251CE387F600829F3F /* WLNetworkReloaderView.m in Sources */,
 				C26255131CE381E600829F3F /* UITableView+WLEmptyPlaceHolder.m in Sources */,
 				C26255101CE37D5300829F3F /* WLViewController.m in Sources */,
+				C2F80D351CE411A800FFCF7C /* WLNextDemoViewController.m in Sources */,
 				C262550F1CE37D5300829F3F /* main.m in Sources */,
 				C262550A1CE37D5300829F3F /* AppDelegate.m in Sources */,
 				C26255161CE3820C00829F3F /* UICollectionView+WLEmptyPlaceHolder.m in Sources */,

@@ -23,6 +23,27 @@
 
 - (void) setup
 {
+    self.backgroundColor = [UIColor whiteColor];
+    
+    CGFloat imgW = 173.0f;
+    CGFloat imgH = 105.0f;
+    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.center.x-imgW*0.5,self.center.y-imgH, imgW, imgH)];
+    [self addSubview:imageView];
+    imageView.image = [UIImage imageNamed:@"no-wifi"];
+    UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(imageView.frame), self.frame.size.width, 15)];
+    [self addSubview:label];
+    label.text = @"网络不太顺畅哦~";
+    label.textColor = [UIColor blackColor];
+    label.font = [UIFont systemFontOfSize:15];
+    UIButton * reloadBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self addSubview:reloadBtn];
+    
+    CGFloat btnW = 100.0f;
+    CGFloat btnH = 50.0f;
+    reloadBtn.frame = CGRectMake(self.center.x-btnW * 0.5, CGRectGetMaxY(label.frame), btnW, btnH);
+    reloadBtn.layer.borderWidth = 0.5;
+    reloadBtn.layer.cornerRadius = 3.0;
+    reloadBtn.layer.borderColor = [UIColor blackColor].CGColor;
     
 }
 
