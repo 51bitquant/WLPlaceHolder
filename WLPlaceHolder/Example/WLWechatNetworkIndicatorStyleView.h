@@ -8,7 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+
+@protocol WLWechatNetworkIndicatorStyleViewDelegate;
 @interface WLWechatNetworkIndicatorStyleView : UIView
+
+@property (nonatomic,weak) id<WLWechatNetworkIndicatorStyleViewDelegate> delegate;
+
+@end
+
+@protocol WLWechatNetworkIndicatorStyleViewDelegate <NSObject>
+@optional
+
+- (void) wechatNetworkIndicatorStyleViewDidTaped:(WLWechatNetworkIndicatorStyleView *) wechatStyleView;
+
 
 @end
 

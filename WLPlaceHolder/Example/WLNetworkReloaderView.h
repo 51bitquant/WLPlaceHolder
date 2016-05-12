@@ -17,5 +17,7 @@
 
 @protocol WLNetworkReloaderViewDelegate <NSObject>
 
+@optional
+- (void) networkReloaderView:(WLNetworkReloaderView *) networkView DidClickedReloadBtn:(UIButton *) sender;
 
 @end

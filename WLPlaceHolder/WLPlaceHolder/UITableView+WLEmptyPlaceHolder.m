@@ -7,6 +7,7 @@
 //
 
 #import "UITableView+WLEmptyPlaceHolder.h"
+#import <objc/runtime.h>
 
 @implementation UITableView (WLEmptyPlaceHolder)
 //添加一个方法
@@ -27,5 +28,6 @@
 {
     
 }
+
 
 @end

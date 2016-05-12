@@ -18,7 +18,6 @@
 		C26255131CE381E600829F3F /* UITableView+WLEmptyPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = C26255121CE381E600829F3F /* UITableView+WLEmptyPlaceHolder.m */; };
 		C26255161CE3820C00829F3F /* UICollectionView+WLEmptyPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = C26255151CE3820C00829F3F /* UICollectionView+WLEmptyPlaceHolder.m */; };
 		C262551C1CE3854700829F3F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C262551B1CE3854700829F3F /* Default-568h@2x.png */; };
-		C262551E1CE385A200829F3F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C262551D1CE385A200829F3F /* Info.plist */; };
 		C26255221CE387D100829F3F /* WLWechatNetworkIndicatorStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C26255211CE387D100829F3F /* WLWechatNetworkIndicatorStyleView.m */; };
 		C26255251CE387F600829F3F /* WLNetworkReloaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C26255241CE387F600829F3F /* WLNetworkReloaderView.m */; };
 		C2F80D351CE411A800FFCF7C /* WLNextDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F80D341CE411A800FFCF7C /* WLNextDemoViewController.m */; };
@@ -313,7 +312,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C262551E1CE385A200829F3F /* Info.plist in Resources */,
 				C262550B1CE37D5300829F3F /* Assets.xcassets in Resources */,
 				C262551C1CE3854700829F3F /* Default-568h@2x.png in Resources */,
 				C262550C1CE37D5300829F3F /* LaunchScreen.storyboard in Resources */,
